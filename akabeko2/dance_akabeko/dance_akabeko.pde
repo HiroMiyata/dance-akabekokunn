@@ -8,10 +8,10 @@ void setup()
 { 
   size(1280, 640, P3D); 
   noStroke(); 
-  
+ cpu = 0;
  count = 0;
  delay = 0;
- receptionTime = 10; 
+ receptionTime = 30; 
  edTime = 1000;
 } 
 
@@ -21,7 +21,8 @@ void draw()
   text(str(edTime),100,100);
   text(str(receptionTime),100,300);
   if(receptionTime == 0){
-    instruction_game();
+    cpu =round(random(4));
+    
     receptionTime = 100;
   }
   if(delay < 0){
@@ -29,22 +30,22 @@ void draw()
       case 'w':
       key_w();
     
-      delay = 10;
+      delay = 30;
       break;
        case 'a':
       key_a();
       
-      delay = 10;
+      delay = 30;
       break;
        case 's':
       key_s();
       
-      delay = 10;
+      delay = 30;
       break;
        case 'd':
       key_d();
       
-      delay = 10;
+      delay = 30;
       break;
   
     }
@@ -56,6 +57,7 @@ void draw()
   if( receptionTime > 50){
     show_instruction();
   }
+  
   edTime--;
   receptionTime--;
   delay--;
