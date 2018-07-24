@@ -2,7 +2,7 @@ void game(){
   if(edTime > 0){
     text(str(edTime),100,100);
   } else{
-     text("終了です",100,100);
+     text("END",100,100);
   }
   if(receptionTime == 0){
     cpu =round(random(4));
@@ -31,12 +31,15 @@ void game(){
        lookPoint=3.0;
       delay = 30;
       break;
-  
+      
     }
   }
   key = 'q';
+  if(key =='m'){
+    delay(1500);
+  }
   if(edTime < 0){
-    text("あなたの成功回数は",600,100);
+    text("Your Point",600,100);
     text(str(count),600,200);
   }
   if( receptionTime > 50 && edTime > 0){
