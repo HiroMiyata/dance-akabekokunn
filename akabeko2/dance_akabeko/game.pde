@@ -10,22 +10,22 @@ void game(){
     switch(key){
       case 'w':
       key_w();
-    
+      lookPoint=0.0;
       delay = 30;
       break;
-       case 'a':
+      case 'a':
       key_a();
-      
+       lookPoint=1.0;
       delay = 30;
       break;
        case 's':
       key_s();
-      
+       lookPoint=2.0;
       delay = 30;
       break;
        case 'd':
       key_d();
-      
+       lookPoint=3.0;
       delay = 30;
       break;
   
@@ -37,6 +37,11 @@ void game(){
   }
   if( receptionTime > 50){
     show_instruction();
+  }
+  if(delay > 0){
+    instruction_beko();
+  } else{
+    show_beko();
   }
   
   edTime--;

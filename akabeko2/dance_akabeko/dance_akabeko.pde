@@ -3,6 +3,9 @@ float receptionTime;//キー受付時間
 float edTime;//ゲーム時間
 float delay;//受付禁止時間
 float cpu;//ゲームの指示
+float lookPoint;//ベコの移動方向
+float doTime;//移動時間
+float go;//移動距離
 
 void setup() 
 { 
@@ -13,6 +16,8 @@ void setup()
  delay = 0;
  receptionTime = 30; 
  edTime = 1000;
+ doTime = 0;
+ show_beko();
 } 
 
 void draw()  
@@ -21,17 +26,5 @@ void draw()
   
   lights();
   game();
-  scale(0.5);
-  translate(200, 800);
-  beko_b();
-  translate(400, 0);
-  beko_y();
-  translate(400, 0);
-  beko_r(); 
-  translate(400, 0);
-  beko_pi();
-  translate(400, 0);
-  beko_pp();
-  translate(400, 0);
-  beko_g(); 
+  
 }
