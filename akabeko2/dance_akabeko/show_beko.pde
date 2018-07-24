@@ -1,6 +1,7 @@
 void show_beko(){
-scale(0.5);
-  translate(200, 800);
+  pushMatrix();
+  scale(0.5);
+  translate(200, 1000);
   beko_b();
   translate(400, 0);
   beko_y();
@@ -12,4 +13,5 @@ scale(0.5);
   beko_pp();
   translate(400, 0);
   beko_g(); 
+  popMatrix();
 }

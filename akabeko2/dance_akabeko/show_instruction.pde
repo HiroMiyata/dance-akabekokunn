@@ -1,8 +1,9 @@
 void show_instruction(){
+
    switch(str(cpu)){
    case "0.0":
    
-   text('s',600,300);
+   text('w',600,300);
    break;
    case "1.0":
    
@@ -13,8 +14,7 @@ void show_instruction(){
     text('s',600,300);
    break;
    case "3.0":
-   ;
-    text('d',600,300);
+   text('d',600,300);
    break;
  }
   
