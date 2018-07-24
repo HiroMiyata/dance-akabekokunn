@@ -1,6 +1,6 @@
 void game(){
   text(str(edTime),100,100);
-  text(str(receptionTime),100,300);
+  
   if(receptionTime == 0){
     cpu =round(random(4));
     

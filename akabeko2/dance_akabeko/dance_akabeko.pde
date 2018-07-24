@@ -18,6 +18,7 @@ void setup()
  edTime = 1000;
  doTime = 0;
  show_beko();
+ textSize(16);
 } 
 
 void draw()  

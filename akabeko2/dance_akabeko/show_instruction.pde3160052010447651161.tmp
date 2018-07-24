@@ -1,19 +1,19 @@
 void show_instruction(){
    switch(str(cpu)){
    case "0.0":
-   
+   textSize(32);
    text('s',600,300);
    break;
    case "1.0":
-   
+   textSize(32);
     text('a',600,300);
    break;
    case "2.0":
-  
+   textSize(32);
     text('s',600,300);
    break;
    case "3.0":
-   ;
+   textSize(32);
     text('d',600,300);
    break;
  }
