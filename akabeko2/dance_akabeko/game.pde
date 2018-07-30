@@ -34,10 +34,11 @@ void game(){
       
     }
   }
-  key = 'q';
   if(key =='m'){
-    delay(1500);
+    delay(15000);
   }
+  key = 'q';
+  
   if(edTime < 0){
     text("Your Point",600,100);
     text(str(count),600,200);
